@@ -17,6 +17,7 @@ def open_serial():
 
 	#simple com port
 	port = Serial(port='/dev/ttyUSB0', baudrate=9600)
+	
 	port.isOpen()
 
 
