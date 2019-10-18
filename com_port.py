@@ -7,10 +7,16 @@ port = None
 
 def open_serial():
 	global port
+
+	'''
+	#work with bluetooth com port
 	Popen(['sudo', 'rfcomm', 'connect', 'hci0', '00:18:E4:35:45:73', '1'])
 	sleep(5)
-
 	port = Serial(port='/dev/rfcomm0', baudrate=9600)
+	'''
+
+	#simple com port
+	port = Serial(port='/dev/ttyUSB0', baudrate=9600)
 	port.isOpen()
 
 

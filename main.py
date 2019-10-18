@@ -30,6 +30,8 @@ def setup():
 	except:
 		print('[WARNING] PORT IS NOT OPEN')
 
+	synthesize_speech('Что прикажете делать')
+
 
 def detected_hotword():
 	global snow_decoder
