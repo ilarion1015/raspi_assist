@@ -27,7 +27,7 @@ def date():
 
 def time():
 	now = dt.now()
-	return {now.strftime('%-H:%-M')}, f"сейчас {now.strftime('%-H:%-M')}"
+	return f"{now.strftime('%-H:%-M')}", f"сейчас {now.strftime('%-H:%-M')}"
 
 
 def weather():
